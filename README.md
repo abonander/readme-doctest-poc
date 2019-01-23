@@ -1,4 +1,4 @@
-README Doctest PoC
+README Doctest PoC ![](https://img.shields.io/travis/abonander/readme-doctest-poc.svg)
 ------------------
 
 The following code block is tested automatically. 
