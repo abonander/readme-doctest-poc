@@ -1,5 +1,5 @@
 // If you want your README.md to double as your crate root docs you can potentially include it with
-// `#![doc(
+// `#![doc(include = "../README.md")]`
 // and it'll be rendered and its code examples will also be tested.
 //
 // However, for the meantime you probably don't want to require nightly to render your crate docs.
