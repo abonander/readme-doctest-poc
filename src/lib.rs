@@ -3,7 +3,7 @@
 // and it'll be rendered and its code examples will also be tested.
 //
 // However, for the meantime you probably don't want to require nightly to render your crate docs.
-// That, and you may not always want to have your README and crate docs to have the exact same
+// That, and you may not always want your README and crate docs to have the exact same
 // content; besides styling differences, the README is nowadays more important for showcasing the
 // crate's main features while the root docs should focus on showing the user how to actually use 
 // the crate (IMO).
