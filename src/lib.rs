@@ -9,6 +9,14 @@
 // the crate (IMO).
 #![feature(external_doc)]
 
+// While this feature is unstable, crate authors will want to conditionally test this only on nightly, 
+// which you can do in your Travis-CI script with a configuration like the following: 
+// https://github.com/abonander/buf_redux/blob/b2a87f3/.travis.yml
+//
+// If the "nightly" feature is specified in your Cargo.toml then you can conditionally enable this
+// testing with `#[cfg_attr]`; you would use the following instead of the above feature attribute/
+// #[cfg_attr(feature = "nightly", feature(external_doc)]
+
 pub fn foo() -> u32 { 65536 }
 
 // The kind of item doesn't really matter, though typedefs are nice since they don't appear in the
@@ -16,4 +24,6 @@ pub fn foo() -> u32 { 65536 }
 //
 // Also it needs to be private so your whole README isn't rendered in your crate docs somewhere.
 #[doc(include = "../README.md")]
+// And if you're conditionally testing under a Cargo feature then you would add the following:
+// #[cfg(feature = "nightly")]
 type _DoctestReadme = ();

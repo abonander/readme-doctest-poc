@@ -35,3 +35,7 @@ isn't exactly going to be fun.
 
 ... That's about it, actually! It's criminal that more people don't know about this. The `external_doc` feature needs a kick
 in the pants to get stabilized so more people can benefit from this as well as its intended uses.
+
+### License / Contributing
+This work is released to the public domain. Any contribution intentionally submitted for inclusion shall also be released 
+to the public domain.
