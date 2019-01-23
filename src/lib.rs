@@ -14,8 +14,8 @@
 // https://github.com/abonander/buf_redux/blob/b2a87f3/.travis.yml
 //
 // If the "nightly" feature is specified in your Cargo.toml then you can conditionally enable this
-// testing with `#[cfg_attr]`; you would use the following instead of the above feature attribute/
-// #[cfg_attr(feature = "nightly", feature(external_doc)]
+// testing with `#[cfg_attr]`; you would use the following instead of the above feature attribute:
+// #![cfg_attr(feature = "nightly", feature(external_doc)]
 
 pub fn foo() -> u32 { 65536 }
 
