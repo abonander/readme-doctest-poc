@@ -12,10 +12,8 @@
 pub fn foo() -> u32 { 65536 }
 
 // The kind of item doesn't really matter, though typedefs are nice since they don't appear in the
-// binary. The `#[allow(dead_code)]` is necessary to silence the lint since this isn't used
-// anywhere..
+// binary.
 //
 // Also it needs to be private so your whole README isn't rendered in your crate docs somewhere.
-#[allow(dead_code)]
 #[doc(include = "../README.md")]
-type DoctestReadme = ();
+type _DoctestReadme = ();
